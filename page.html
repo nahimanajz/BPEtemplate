@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Bouletteproof Email</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        background-color: #f9f9f9;
+      }
+      .logo {
+        height: 65px;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 27px;
+      }
+      .w-full {
+        width: 608px;
+      }
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+      }
+      .container {
+        background-color: white;
+        border-radius: 12px;
+        max-width: 608px;
+        width: auto;
+        min-height: 578px;
+        height: auto;
+        padding: 24px;
+      }
+      .mt-24 {
+        padding-top: 24px;
+      }
+      .teal-blue {
+        color: #07bdcb;
+      }
+      .py-24 {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .px-16 {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+      .mt-8 {
+        margin-top: 8px;
+      }
+      .link-text-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        background-color: #142132;
+        color: #fff;
+        border: 0;
+        border-radius: 8px;
+        max-width: 262px;
+        height: 56px;
+        text-decoration: none;
+      }
+      .divider {
+        width: 25%;
+        height: 1px;
+        background-color: #d4dee8;
+      }
+      @media only screen and (max-width: 600px) {
+        .flex {
+          justify-content: flex-start;
+          padding: auto;
+          align-items: flex-start;
+          padding-left: 12px;
+          padding-right: 12px;
+          margin-bottom: 34px;
+        }
+        .w-full {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="w-full mt-8">
+        <img
+          alt="Logo"
+          src="https://app.bouletteproof.rw/assets/img/logo-256.png"
+          class="logo"
+        />
+      </div>
+      <div class="container">
+        <h2>Confirm your email</h2>
+        <div class="flex-col">
+          <span>Hi ${{{dominique}}}</span>
+          <span>
+            You’ve just created a new bouletteproof account and we are thrilled
+            to have you onboard. Please confirm your email address
+            <span class="teal-blue">{{{email@email.com}}}</span>
+          </span>
+          <a href="/" class="button link-text-align"
+            >Confirm my email Address</a
+          >
+          <span>
+            If you did not create an account on IOPifi using this email address,
+            please ignore this email and report to<span class="teal-blue">
+              support@iopifi.com
+            </span>
+            to remove it from our data. Thanks.
+          </span>
+          <div class="divider mt-8"></div>
+          <div class="flex-col">
+            <span>Best</span>
+            <span>Team bouletteproof</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
